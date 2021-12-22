@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Draft of Qustions -->
+<html>
+    <head>
+        <title>Question Type 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p class="title">Suppose we have the next abstract class:</p>
+
+        <div class="question">
+            <div class="code_java">
+                abstract class Shape {
+                protected String color;
+                public Shape(String color) {
+                this.color = color;                }
+                abstract public void draw();                }
+            </div>
+
+            <div class="text">What is the result of executing the following program:</div>
+
+            <div class="code_java">
+                public class Main {
+                public static void main(String[] args) {
+                Shape shape = new Shape(){
+                String color = "Green";            
+                public void draw() {
+                System.out.println("Shape is " + color);
+                }                };
+                shape.draw();
+                }                }
+            </div>
+
+            <div class="text">Select one:</div>
+        </div>
+        
+        <div class="answers">
+            <div>
+                <input type="radio" name="name2">
+                <div>Shape is Green</div>
+            </div>
+            
+            <div>
+                <input type="radio" name="name2">
+                <div>compile error</div>
+            </div>
+            
+            <div>
+                <input type="radio" name="name2">
+                <div>Shape is null</div>
+            </div>
+        </div>
+        
+        <div class="explanation">             
+            <div class="text">Compile error in line: </div>
+            <div class="code_java">Shape shape = new Shape(){</div>
+            <div class="text">Incorrect constructor.</div>
+        </div>
+        
+        <div class="source">
+            <div>SoftServe</div>
+        </div>
+        
+        <div class="themes">
+            <div>Inner, outer class. Enum</div>
+        </div>
+        
+        <div class="tags">
+            <div>java</div>            
+        </div>
+
+    </body>
+</html>
